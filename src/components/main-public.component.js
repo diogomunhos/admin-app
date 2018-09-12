@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, HashRouter, Switch} from "react-router-dom";
+import { Route, BrowserRouter, Switch} from "react-router-dom";
 import ForgotPassword from "./forgot-password.component";
 import LoginPage from "./login-page.component";
 class MainPublic extends React.Component{
@@ -7,7 +7,7 @@ class MainPublic extends React.Component{
 
     render(){
         return (
-            <HashRouter>
+            <BrowserRouter>
                 <div className="cls-container">
                     <div className="bg-img backgroung-login"></div>
                     <div className="cls-content">
@@ -17,7 +17,7 @@ class MainPublic extends React.Component{
                         </Switch>
                     </div>
                 </div>
-            </HashRouter>
+            </BrowserRouter>
         )
     }
 
