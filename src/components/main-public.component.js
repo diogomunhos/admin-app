@@ -1,23 +1,17 @@
 import React from 'react';
-import { Route, BrowserRouter, Switch} from "react-router-dom";
-import ForgotPassword from "./forgot-password.component";
-import LoginPage from "./login-page.component";
 class MainPublic extends React.Component{
 
 
     render(){
         return (
-            <BrowserRouter>
-                <div className="cls-container">
-                    <div className="bg-img backgroung-login"></div>
-                    <div className="cls-content">
-                        <Switch>
-                            <Route exact path="/login" component={LoginPage}/>
-                            <Route exact path="/forgot-password" component={ForgotPassword}/>
-                        </Switch>
-                    </div>
+            <div className="cls-container">
+                <div className="bg-img background-login"></div>
+                <div className="cls-content">
+                        {/* <Link to="/login" component={LoginPage}/>
+                        <Link to="/forgot-password" component={ForgotPassword}/> */}
+                        {this.props.children}
                 </div>
-            </BrowserRouter>
+            </div>
         )
     }
 
