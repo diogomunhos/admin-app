@@ -5,3 +5,15 @@
 .background-private {
     background-image: url("../images/background-private-page.jpg");
 }
+
+.width-95 {
+    width: 95%;
+}
+
+.width-15 {
+    width: 15%;
+}
+
+.width-75 {
+    width: 75%;
+}
